@@ -1,12 +1,12 @@
-const ContaBancaria = {
-  constructor(titular, saldo) {
-    this.titular = titular;
-    this.saldo = saldo;
-  },
+function ContaBancaria (titular, saldo) {
+  this.titular = titular
+  this.saldo = saldo
 
-  depositar: function (valor) {},
+  this.depositar = function (valor) {},
 
-  retirar: function (valor) {},
+  this.retirar = function (valor) {},
 
-  consultarSaldo: function () {}
+  this.consultarSaldo = function () {
+    console.log(`O saldo de ${this.titular} é ${this.saldo}`)
+  }
 };
